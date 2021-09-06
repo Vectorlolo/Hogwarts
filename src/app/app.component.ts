@@ -28,15 +28,5 @@ export class AppComponent {
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
-  // ngAftherViewInit(){
-  //   this.observer.observe(['(max-width:800px)']).subscribe((response)=>{
-  //     if(response.matches){
-  //       this.sidenav.mode = 'over';
-  //       this.sidenav.close()
-  //     }else{
-  //       this.sidenav.mode = 'side';
-  //       this.sidenav.open()
-  //     }
-  //   })
-  // }
+ 
 }
