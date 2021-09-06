@@ -1,0 +1,12 @@
+.example-card {
+    max-width: 450px;
+    margin-bottom: 10px;
+    background-color: #e7e3af;
+  }
+
+  *:not(.iconfont) {
+    font-family: wizard /* Replace with your custom font */, sans-serif !important; 
+    /* Add !important to overwrite all elements */
+  }
+
+ 

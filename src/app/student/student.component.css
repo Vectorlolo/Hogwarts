@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+
+  *:not(.iconfont) {
+    font-family: wizard /* Replace with your custom font */, sans-serif !important; 
+    /* Add !important to overwrite all elements */
+  }
+
+  .card{
+    text-align: center;
+  }
+
+  .color{
+   background-color: #e7e3af;
+  }
