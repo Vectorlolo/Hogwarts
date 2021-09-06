@@ -12,8 +12,8 @@ table {
   }
 
   *:not(.iconfont) {
-    font-family: wizard /* Replace with your custom font */, sans-serif !important; 
-    /* Add !important to overwrite all elements */
+    font-family: wizard , sans-serif !important; 
+
   }
 
   .card{
