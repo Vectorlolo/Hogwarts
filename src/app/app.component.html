@@ -10,7 +10,7 @@
       <img style="width: 58px;" src="assets/images/logo.png" alt="">
     </mat-toolbar>
     <mat-toolbar class="toolbar">
-      <mat-toolbar-row class="option" (click)="option='character'">
+      <mat-toolbar-row class="option" (click)="optionChange('character')">
         <span>Personajes</span>
         <span class="example-spacer"></span>
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
@@ -18,14 +18,14 @@
         </button>
       </mat-toolbar-row>
   
-      <mat-toolbar-row class="option" (click)="option='student'">
+      <mat-toolbar-row class="option" (click)="optionChange('student')">
         <span>Estudiantes</span>
         <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
           <mat-icon class="iconfont">person_outline</mat-icon>
         </button>
       </mat-toolbar-row>
 
-      <mat-toolbar-row class="option" (click)="option='teacher'">
+      <mat-toolbar-row class="option" (click)="optionChange('teacher')">
         <span>Profesores</span>
         <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
           <mat-icon class="iconfont">people</mat-icon>
@@ -36,9 +36,10 @@
 
   <div style="margin-left: auto;margin-right: auto;" class="sidenav-content">
     <hogwarts *ngIf="option =='hogwarts'"></hogwarts>
-    <characters *ngIf="option =='character'"></characters>
-    <student *ngIf="option =='student'"></student>
-    <teacher *ngIf="option =='teacher'"></teacher>
+    <!-- <characters *ngIf="option =='character'"></characters> -->
+    <!-- <student *ngIf="option =='student'"></student>
+    <teacher *ngIf="option =='teacher'"></teacher> -->
+    <character-student-teacher #characterStudentTeacher [option]="option" *ngIf=" option =='character' || option =='student' || option =='teacher'"></character-student-teacher>
   </div>
 </mat-drawer-container>
 
